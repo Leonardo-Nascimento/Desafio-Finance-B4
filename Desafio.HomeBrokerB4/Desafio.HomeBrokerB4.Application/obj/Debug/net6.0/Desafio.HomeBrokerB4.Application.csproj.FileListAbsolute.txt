@@ -1,0 +1,15 @@
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\bin\Debug\net6.0\Desafio.HomeBrokerB4.Application.deps.json
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\bin\Debug\net6.0\Desafio.HomeBrokerB4.Application.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\bin\Debug\net6.0\Desafio.HomeBrokerB4.Application.pdb
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\bin\Debug\net6.0\Desafio.HomeBrokerB4.Domain.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\bin\Debug\net6.0\Desafio.HomeBrokerB4.Domain.pdb
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\obj\Debug\net6.0\Desafio.HomeBrokerB4.Application.csproj.AssemblyReference.cache
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\obj\Debug\net6.0\Desafio.HomeBrokerB4.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\obj\Debug\net6.0\Desafio.HomeBrokerB4.Application.AssemblyInfoInputs.cache
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\obj\Debug\net6.0\Desafio.HomeBrokerB4.Application.AssemblyInfo.cs
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\obj\Debug\net6.0\Desafio.HomeBrokerB4.Application.csproj.CoreCompileInputs.cache
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\obj\Debug\net6.0\Desafio.HomeBrokerB4.Application.csproj.CopyComplete
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\obj\Debug\net6.0\Desafio.HomeBrokerB4.Application.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\obj\Debug\net6.0\refint\Desafio.HomeBrokerB4.Application.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\obj\Debug\net6.0\Desafio.HomeBrokerB4.Application.pdb
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Application\obj\Debug\net6.0\ref\Desafio.HomeBrokerB4.Application.dll

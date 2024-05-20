@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fUSkNg4EkmMoaB/N0wcg5b0zSR17UpDCAlP9AkiApaPVF3AjkCcvxg8iAXH5YVvK4yKIn0NYluBV/am8sd037w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leona\\Desktop\\LEO\\Estudos\\Desafio\\Finance.B4\\Finance.B4\\Finance.B4.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leona\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512"
+  ],
+  "logs": []
+}

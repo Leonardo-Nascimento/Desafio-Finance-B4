@@ -1,0 +1,17 @@
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\obj\Debug\net6.0\Finance.B4.Application.csproj.AssemblyReference.cache
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\obj\Debug\net6.0\Finance.B4.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\obj\Debug\net6.0\Finance.B4.Application.AssemblyInfoInputs.cache
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\obj\Debug\net6.0\Finance.B4.Application.AssemblyInfo.cs
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\obj\Debug\net6.0\Finance.B4.Application.csproj.CoreCompileInputs.cache
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\bin\Debug\net6.0\Finance.B4.Application.deps.json
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\bin\Debug\net6.0\Finance.B4.Application.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\bin\Debug\net6.0\Finance.B4.Application.pdb
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\bin\Debug\net6.0\Finance.B4.Domain.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\bin\Debug\net6.0\Finance.B4.Infra.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\bin\Debug\net6.0\Finance.B4.Domain.pdb
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\bin\Debug\net6.0\Finance.B4.Infra.pdb
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\obj\Debug\net6.0\Finance.B4.Application.csproj.CopyComplete
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\obj\Debug\net6.0\Finance.B4.Application.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\obj\Debug\net6.0\refint\Finance.B4.Application.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\obj\Debug\net6.0\Finance.B4.Application.pdb
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Finance.B4\Finance.B4.Application\obj\Debug\net6.0\ref\Finance.B4.Application.dll

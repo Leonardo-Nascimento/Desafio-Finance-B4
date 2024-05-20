@@ -1,0 +1,12 @@
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\bin\Debug\net6.0\Desafio.HomeBrokerB4.Infra.deps.json
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\bin\Debug\net6.0\Desafio.HomeBrokerB4.Infra.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\bin\Debug\net6.0\Desafio.HomeBrokerB4.Infra.pdb
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\obj\Debug\net6.0\Desafio.HomeBrokerB4.Infra.csproj.AssemblyReference.cache
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\obj\Debug\net6.0\Desafio.HomeBrokerB4.Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\obj\Debug\net6.0\Desafio.HomeBrokerB4.Infra.AssemblyInfoInputs.cache
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\obj\Debug\net6.0\Desafio.HomeBrokerB4.Infra.AssemblyInfo.cs
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\obj\Debug\net6.0\Desafio.HomeBrokerB4.Infra.csproj.CoreCompileInputs.cache
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\obj\Debug\net6.0\Desafio.HomeBrokerB4.Infra.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\obj\Debug\net6.0\refint\Desafio.HomeBrokerB4.Infra.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\obj\Debug\net6.0\Desafio.HomeBrokerB4.Infra.pdb
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\obj\Debug\net6.0\ref\Desafio.HomeBrokerB4.Infra.dll

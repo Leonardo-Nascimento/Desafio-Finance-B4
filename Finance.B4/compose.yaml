@@ -1,0 +1,38 @@
+version: "3.7"
+services:
+  rabbit:
+    image: rabbitmq:3-management
+    container_name: "rabbit"
+    restart: always
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    hostname: "my-rabbit"
+    networks: 
+      - financenet
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 40s
+      timeout: 30s
+      retries: 3      
+  finance.api:
+    container_name: "FinanceApi"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment: 
+      - BASE_URL = finance.api
+    ports:
+      - "5000:80"
+      - "5001:443"
+    restart: always
+    # environment:
+    #   - MYSQL_CONNECTION_STRING=Server=mysql;Database=protips;Uid=vinicius;Pwd=Senh@123!
+    depends_on:
+      rabbit:
+        condition: service_healthy    
+    networks: 
+      - financenet
+networks:
+  financenet:
+    driver: bridge

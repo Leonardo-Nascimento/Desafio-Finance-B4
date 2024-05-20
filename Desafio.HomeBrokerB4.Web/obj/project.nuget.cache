@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0dAu19JZS9J7I8SR0EtX30d2RSdNt1qYHypUFLed8Ae7ac4QAfLHOhEGgPljsEkXKC4CPLCihK5g3VLqg4bqMQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leona\\Desktop\\LEO\\Estudos\\Desafio\\Desafio.HomeBrokerB4\\Desafio.HomeBrokerB4.Web\\Desafio.HomeBrokerB4.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leona\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.18.1\\microsoft.visualstudio.azure.containers.tools.targets.1.18.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "l79n0PAQ+JZFPLOtEhWH/6YUmNFRIQ3IlvIJlHxFcbC4dUxRby2bZhgyXWjkbXtgFb4ckPZFVWkjY+Hko3WE2g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leona\\Desktop\\LEO\\Estudos\\Desafio\\Desafio.HomeBrokerB4\\Desafio.HomeBrokerB4.Application\\Desafio.HomeBrokerB4.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leona\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\leona\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\leona\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
