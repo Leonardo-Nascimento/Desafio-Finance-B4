@@ -1,0 +1,40 @@
+Olá!
+Bem vindo ao eco ecossistema B4 ( o que deveria ser o sucessor da B3 rsrs).
+
+Na foto "Arquitetura B4" que está na raiz da solução é possivel ver como o projeto foi idealizado.
+
+Obs: Infelizmente apenas cerca de 40% foi implementado devido a alguns contra tempos e ao curto periodo para faze-lo
+
+*Negocio*
+
+-Foi usado uma lib para se comunicar com a API do Yahoo Finance
+
+-A api finance lê o arquivo json, escolhe 10 empresas e pesquisa suas ações
+-salva em uma fila para consutas
+
+O serviço HB B4 lê a fila e mostra para o cliente, atravês de um aplicativo de console
+
+*Ficou faltando implentar*
+- O cliente escolher as ações que deseja comprar
+-salvar no banco em memória
+
+-Um Worker ficaria consultando essas ações que foram compradas e fazendo 
+requests para a api finance e pegando o preço atualizado. 
+
+- o valor atualizado é inserido no banco Mongo DB
+
+Comparar os 2 valore para ver se o preço da ação está mais caro (dando lucro para o cliente).
+
+----------------Como Rodar o projeto----------------------
+
+- Primeiro rodar o arquivo 'compose' que está na pasta "Finance.B4" 
+- Usar o comando 'docker compose up -d --build' dentro da pasta do arquivo
+
+- Abrir o projeto "Desafio.HomeBrokerB4" 
+- Clicar em "Opções de Inicialização"
+- Selecione a opção: "Vários projetos de inicialização"
+- Selecione a "Api" e "Exibir Dados"
+
+
+
+
