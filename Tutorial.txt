@@ -34,6 +34,12 @@ Comparar os 2 valore para ver se o preço da ação está mais caro (dando lucro
 - Clicar em "Opções de Inicialização"
 - Selecione a opção: "Vários projetos de inicialização"
 - Selecione a "Api" e "Exibir Dados"
+- Execute o projeto
+
+- Faça uma requisição para "GetQuotesRamdom"
+- User a url "Get" 'http://localhost:5000/api/Quote/GetQuotesRamdom' ou o swagger 'http://localhost:5000/swagger/index.html' para fazer 
+
+
 
 
 
