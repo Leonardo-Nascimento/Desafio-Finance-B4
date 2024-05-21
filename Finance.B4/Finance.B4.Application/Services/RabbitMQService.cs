@@ -12,48 +12,43 @@ namespace Finance.B4.Application.Services
     {
 
         private readonly IConfiguration _configuration;
+        ConnectionFactory _factory;
+        IConnection _conn;
+        IModel _channel;
+
         public RabbitMQService(IConfiguration configuration)
         {
+
             _configuration = configuration;
+            var host = Environment.GetEnvironmentVariable("BASE_URL_RABBIT") ?? _configuration.GetSection("RabbitMQ:BaseUrl").Value;
+
+            _factory = new ConnectionFactory() { HostName = host == "localhost" ? host : "rabbitmq", Port = 5672 };
+            
+            _factory.UserName = "guest";
+            _factory.Password = "guest";
+            _conn = _factory.CreateConnection();
+            _channel = _conn.CreateModel();
+            _channel.QueueDeclare(queue: "ListQuotesRandom",
+                                    durable: false,
+                                    exclusive: false,
+                                    autoDelete: false,
+                                    arguments: null);
         }
 
 
         public bool SendMessage(EventQuote @event)
         {
-            var _factory = new ConnectionFactory
-            {
-                HostName = Environment.GetEnvironmentVariable("BASE_URL_RABBIT") ?? _configuration.GetSection("RabbitMQ:BaseUrl").Value
-            };
-
-            if (_factory.HostName != "localhost")
-            {
-
-                _factory.Endpoint.Port = 5672;
-                _factory.Port = 5672;
-            }
-
-
+            Console.WriteLine("var publicar no host:" + _factory.HostName);
 
             try
             {
                 var message = ToMessage(@event);
 
-                using IConnection connection = _factory.CreateConnection();
-                using IModel channel = connection.CreateModel();
-
-                string queueName = "queue.quotes.random";
-                channel.QueueDeclare(queue: queueName, durable: true, exclusive: false, autoDelete: false, arguments: null);                
-
-                IBasicProperties properties = channel.CreateBasicProperties();
-
-                Console.WriteLine($"Vai mandar a mensagem para a url: {_factory.HostName}");
-                Console.WriteLine($"Na porta: {_factory.Endpoint.Port}");
-
-                byte[] body = Encoding.UTF8.GetBytes(message);                
-                channel.BasicPublish(exchange: string.Empty, routingKey: queueName, basicProperties: properties, body: body);
-                
-                Console.WriteLine($"Mandou a menssagem");
-
+                byte[] body = Encoding.UTF8.GetBytes(message);
+                _channel.BasicPublish(exchange: "",
+                                    routingKey: "ListQuotesRandom",
+                                    basicProperties: null,
+                                    body: body);
 
                 return true;
 

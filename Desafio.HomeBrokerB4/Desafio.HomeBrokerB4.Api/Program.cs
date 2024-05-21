@@ -22,7 +22,7 @@ builder.Services.AddDbContext<HomeBrokerB4ContextDb>(opt => opt.UseInMemoryDatab
 
 builder.Services.AddServiceDependency();
 
-builder.Services.AddHostedService<Consumer>();
+//builder.Services.AddHostedService<Consumer>();
 
 var app = builder.Build();
 

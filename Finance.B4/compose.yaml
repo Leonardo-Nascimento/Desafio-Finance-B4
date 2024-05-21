@@ -1,6 +1,6 @@
 version: "3.7"
 services:
-  rabbit:
+  rabbitmq:
     image: rabbitmq:3-management
     container_name: "rabbit"
     restart: always
@@ -11,7 +11,9 @@ services:
       - "25672:25672"
       - "15671:15671"
       - "15672:15672"
-    hostname: "my-rabbit"
+    hostname: "rabbitmq"
+    labels:
+      NAME: "rabbitmq"
     networks: 
       - financenet
     healthcheck:
@@ -27,7 +29,7 @@ services:
     hostname: "api"
     environment: 
       - BASE_URL=http://localhost:80
-      - BASE_URL_RABBIT=amqp://guest:guest@rabbit/
+      - BASE_URL_RABBIT=rabbitmq
     ports:
       - "5000:80"
       - "5001:443"
@@ -35,7 +37,7 @@ services:
     # environment:
     #   - MYSQL_CONNECTION_STRING=Server=mysql;Database=protips;Uid=vinicius;Pwd=Senh@123!
     depends_on:
-      rabbit:
+      rabbitmq:
         condition: service_healthy    
     networks: 
       - financenet

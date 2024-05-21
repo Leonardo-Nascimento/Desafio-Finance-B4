@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.HomeBrokerB4.Application", "Desafio.HomeBrokerB4.Application\Desafio.HomeBrokerB4.Application.csproj", "{79CEA722-23C6-45BD-9AAF-6B4B517941FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.HomeBrokerB4.Application", "Desafio.HomeBrokerB4.Application\Desafio.HomeBrokerB4.Application.csproj", "{79CEA722-23C6-45BD-9AAF-6B4B517941FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.HomeBrokerB4.Domain", "Desafio.HomeBrokerB4.Domain\Desafio.HomeBrokerB4.Domain.csproj", "{A1EAF0C8-AC30-47DC-9D80-D9E144723FD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.HomeBrokerB4.Domain", "Desafio.HomeBrokerB4.Domain\Desafio.HomeBrokerB4.Domain.csproj", "{A1EAF0C8-AC30-47DC-9D80-D9E144723FD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.HomeBrokerB4.Infra", "Desafio.HomeBrokerB4.Infra\Desafio.HomeBrokerB4.Infra.csproj", "{E9FC1F07-9DD4-4E5B-8B45-CC65DE4C2CC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.HomeBrokerB4.Infra", "Desafio.HomeBrokerB4.Infra\Desafio.HomeBrokerB4.Infra.csproj", "{E9FC1F07-9DD4-4E5B-8B45-CC65DE4C2CC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.HomeBrokerB4.Api", "Desafio.HomeBrokerB4.Api\Desafio.HomeBrokerB4.Api.csproj", "{14BA81BB-D755-4DF7-A12F-2C2D3A3F4420}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.HomeBrokerB4.Api", "Desafio.HomeBrokerB4.Api\Desafio.HomeBrokerB4.Api.csproj", "{14BA81BB-D755-4DF7-A12F-2C2D3A3F4420}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExibeDados", "ExibeDados\ExibeDados.csproj", "{4DB1791A-176E-4EB2-BA8B-78B3A0AC41F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{14BA81BB-D755-4DF7-A12F-2C2D3A3F4420}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14BA81BB-D755-4DF7-A12F-2C2D3A3F4420}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14BA81BB-D755-4DF7-A12F-2C2D3A3F4420}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DB1791A-176E-4EB2-BA8B-78B3A0AC41F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DB1791A-176E-4EB2-BA8B-78B3A0AC41F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DB1791A-176E-4EB2-BA8B-78B3A0AC41F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DB1791A-176E-4EB2-BA8B-78B3A0AC41F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

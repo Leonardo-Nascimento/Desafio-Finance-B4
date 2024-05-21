@@ -1,4 +1,5 @@
-﻿using Desafio.HomeBrokerB4.Application.Handlers.Queries.GetListQuotesRandom;
+﻿using Desafio.HomeBrokerB4.Application.Dto;
+using Desafio.HomeBrokerB4.Application.Handlers.Queries.GetListQuotesRandom;
 using Desafio.HomeBrokerB4.Domain.Models;
 using MediatR;
 using Microsoft.Extensions.Hosting;
@@ -11,59 +12,71 @@ using System.ComponentModel;
 using System.Diagnostics.Tracing;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace Desafio.HomeBrokerB4.Application.Consumer
 {
-    public class Consumer : BackgroundService
+    public class Consumer
     {
-        private readonly IConnection _connection;
-        private readonly IModel _chanel;
-        private readonly IMediator _mediator;
+
 
         private readonly string _queue = "queue.quotes.random";
 
 
-        public Consumer(IMediator mediator)
+        public Consumer()
         {
-            var factory = new ConnectionFactory { HostName = "localhost" };
-            _connection = factory.CreateConnection();
-            _chanel = _connection.CreateModel();
-
-            _chanel.QueueDeclare(
-                queue: _queue,
-                durable: false,
-                exclusive: false,
-                autoDelete: false,
-                arguments: null
-                );
-
-            _mediator = mediator;
+            
         }
-        protected override Task ExecuteAsync(CancellationToken stoppingToken)
+        public async Task ExecuteAsync()
         {
-            var consumer = new EventingBasicConsumer(_chanel);
-            consumer.Received += (sender, eventArgs) =>
+            ConnectionFactory factory = new ConnectionFactory() { HostName = "localhost", Port = 5672 };
+            factory.UserName = "guest";
+            factory.Password = "guest";
+            IConnection conn = factory.CreateConnection();
+            IModel channel = conn.CreateModel();
+            channel.QueueDeclare(queue: "ListQuotesRandom",
+                                    durable: false,
+                                    exclusive: false,
+                                    autoDelete: false,
+                                    arguments: null);
+
+            
+            var consumer = new EventingBasicConsumer(channel);
+            GetListQuotesRandomQuery query;
+
+            consumer.Received += (model, ea) =>
             {
-                var contentArray = eventArgs.Body.ToArray();
+                var contentArray = ea.Body.ToArray();
                 var contentString = Encoding.UTF8.GetString(contentArray);
-                var ListQuotesRandom = JsonConvert.DeserializeObject<List<QuoteInfoModel>>(contentString);
 
-                NotifyHandler(ListQuotesRandom);
-
-                _chanel.BasicAck(eventArgs.DeliveryTag, false);
+                //query = new GetListQuotesRandomQuery(response);
+                //NotifyHandler(contentString);
+                Response(contentString);
+                //Console.WriteLine(" [x] Received from Rabbit: {0}", contentString);
             };
+            channel.BasicConsume(queue: "ListQuotesRandom",
+                                    autoAck: true,
+                                    consumer: consumer);
 
-            _chanel.BasicConsume(_queue, false, consumer);
-
-            return Task.CompletedTask;
+            
         }
 
-        public void NotifyHandler(List<QuoteInfoModel> quotesInfoModel)
+        public void NotifyHandler(string json)
         {
-            var request = new GetListQuotesRandomQuery(quotesInfoModel);
-            _mediator.Send(request);
+            var response = JsonConvert.DeserializeObject<QuoteInfoModelsDto>(json);
+            var query = new GetListQuotesRandomQuery(response.ListQuotesInfo);
+            //_mediator.Send(query);
+        }
+
+        public async void Response(string json)
+        {
+            var response = JsonConvert.DeserializeObject<QuoteInfoModelsDto>(json);
+            foreach (var item in response.ListQuotesInfo)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }

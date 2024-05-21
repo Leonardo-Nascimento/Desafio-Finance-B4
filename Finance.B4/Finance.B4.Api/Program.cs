@@ -2,9 +2,7 @@ using Finance.B4.Application.Handlers.Quotes.GetListQuotesRandom;
 using Finance.B4.Application.Services;
 using Finance.B4.Domain.Interfaces.Services;
 using Finance.B4.Infra.Http;
-using Finance.B4.Infra.Seed;
 using Refit;
-using Microsoft.AspNetCore.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,7 +41,5 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-var baseUrl = Environment.GetEnvironmentVariable("BASE_URL") ?? builder.Configuration.GetSection("FinanceApiLocal:BaseUrl").Value;
-SeedEvent.Seed(app, baseUrl);
 
 app.Run();
