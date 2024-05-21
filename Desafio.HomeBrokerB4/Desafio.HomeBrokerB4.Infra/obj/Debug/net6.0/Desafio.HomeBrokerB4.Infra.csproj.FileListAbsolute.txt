@@ -10,3 +10,6 @@ C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrok
 C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\obj\Debug\net6.0\refint\Desafio.HomeBrokerB4.Infra.dll
 C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\obj\Debug\net6.0\Desafio.HomeBrokerB4.Infra.pdb
 C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\obj\Debug\net6.0\ref\Desafio.HomeBrokerB4.Infra.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\bin\Debug\net6.0\Desafio.HomeBrokerB4.Domain.dll
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\bin\Debug\net6.0\Desafio.HomeBrokerB4.Domain.pdb
+C:\Users\leona\Desktop\LEO\Estudos\Desafio\Desafio.HomeBrokerB4\Desafio.HomeBrokerB4.Infra\obj\Debug\net6.0\Desafio.HomeBrokerB4.Infra.csproj.CopyComplete

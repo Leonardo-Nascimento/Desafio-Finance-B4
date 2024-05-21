@@ -3,6 +3,8 @@ using Finance.B4.Application.Handlers.Abstration;
 using Finance.B4.Domain.Event;
 using Finance.B4.Domain.Interfaces.Services;
 using Finance.B4.Domain.Models;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using YahooQuotesApi;
 
@@ -11,10 +13,15 @@ namespace Finance.B4.Application.Handlers.Quotes.GetListQuotesRandom
     public class GetListQuotesRandomHandler : IEventHandler<GetListQuotesRequest>
     {
         private readonly IRabbitMQService _rabbitMQService;
+        private readonly IConfiguration _configuration;
+        private readonly IHttpContextAccessor _contextAccessor;
 
-        public GetListQuotesRandomHandler(IRabbitMQService rabbitMQService)
+
+        public GetListQuotesRandomHandler(IRabbitMQService rabbitMQService, IConfiguration configuration, IHttpContextAccessor contextAccessor)
         {
             _rabbitMQService = rabbitMQService;
+            _configuration = configuration;
+            _contextAccessor = contextAccessor;
         }
 
         public async Task<OutputModel> Handle(GetListQuotesRequest request, CancellationToken cancellationToken)
@@ -58,9 +65,14 @@ namespace Finance.B4.Application.Handlers.Quotes.GetListQuotesRandom
 
                     listQuotesInfo.Add(quoteInfo);
                 }
+                var host = Environment.GetEnvironmentVariable("BASE_URL_RABBIT") ?? _configuration.GetSection("RabbitMQ:BaseUrl").Value;
+                await Console.Out.WriteLineAsync("Vai publicar a mensagem na url:" + host);                
+                
 
                 var @event = new EventQuote(listQuotesInfo);
                 _rabbitMQService.SendMessage(@event);
+                await Console.Out.WriteLineAsync("publicoooouuu!!!!");
+
                 return output.Response();
 
             }

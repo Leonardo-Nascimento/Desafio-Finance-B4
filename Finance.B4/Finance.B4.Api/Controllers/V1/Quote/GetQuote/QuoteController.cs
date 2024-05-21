@@ -9,10 +9,12 @@ namespace Finance.B4.Api.Controllers.V1.Quote.GetQuote
     public class QuoteController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly IHttpContextAccessor _contextAccessor;
 
-        public QuoteController(IMediator mediator)
+        public QuoteController(IMediator mediator, IHttpContextAccessor contextAccessor)
         {
             _mediator = mediator;
+            _contextAccessor = contextAccessor;
         }
 
 
@@ -21,6 +23,8 @@ namespace Finance.B4.Api.Controllers.V1.Quote.GetQuote
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GetQuoteBySymbol([FromBody] GetQuoteRequest input)
         {
+
+
             return Ok(await _mediator.Send(input));
         }
     }

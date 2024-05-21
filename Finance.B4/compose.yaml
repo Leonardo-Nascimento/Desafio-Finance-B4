@@ -5,7 +5,11 @@ services:
     container_name: "rabbit"
     restart: always
     ports:
+      - "4369:4369"
+      - "5671:5671"
       - "5672:5672"
+      - "25672:25672"
+      - "15671:15671"
       - "15672:15672"
     hostname: "my-rabbit"
     networks: 
@@ -20,8 +24,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    hostname: "api"
     environment: 
-      - BASE_URL = finance.api
+      - BASE_URL=http://localhost:80
+      - BASE_URL_RABBIT=amqp://guest:guest@rabbit/
     ports:
       - "5000:80"
       - "5001:443"

@@ -7,13 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\SaleQuote\" />
-    <Folder Include="Commands\ShopQuote\" />
-    <Folder Include="Queries\GetQuoteBySymbol\" />
+    <Folder Include="Handlers\Commands\SaleQuote\" />
+    <Folder Include="Handlers\Commands\ShopQuote\" />
+    <Folder Include="Handlers\Queries\GetQuoteBySymbol\" />
+    <Folder Include="Utils\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
   </ItemGroup>
 
   <ItemGroup>

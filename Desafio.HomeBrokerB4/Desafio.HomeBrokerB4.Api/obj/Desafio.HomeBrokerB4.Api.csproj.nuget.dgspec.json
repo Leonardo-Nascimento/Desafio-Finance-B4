@@ -31,6 +31,9 @@
             "projectReferences": {
               "C:\\Users\\leona\\Desktop\\LEO\\Estudos\\Desafio\\Desafio.HomeBrokerB4\\Desafio.HomeBrokerB4.Application\\Desafio.HomeBrokerB4.Application.csproj": {
                 "projectPath": "C:\\Users\\leona\\Desktop\\LEO\\Estudos\\Desafio\\Desafio.HomeBrokerB4\\Desafio.HomeBrokerB4.Application\\Desafio.HomeBrokerB4.Application.csproj"
+              },
+              "C:\\Users\\leona\\Desktop\\LEO\\Estudos\\Desafio\\Desafio.HomeBrokerB4\\Desafio.HomeBrokerB4.Infra\\Desafio.HomeBrokerB4.Infra.csproj": {
+                "projectPath": "C:\\Users\\leona\\Desktop\\LEO\\Estudos\\Desafio\\Desafio.HomeBrokerB4\\Desafio.HomeBrokerB4.Infra\\Desafio.HomeBrokerB4.Infra.csproj"
               }
             }
           }
@@ -124,6 +127,18 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.2.0, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
             }
           },
           "imports": [
@@ -181,6 +196,75 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\leona\\Desktop\\LEO\\Estudos\\Desafio\\Desafio.HomeBrokerB4\\Desafio.HomeBrokerB4.Infra\\Desafio.HomeBrokerB4.Infra.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\leona\\Desktop\\LEO\\Estudos\\Desafio\\Desafio.HomeBrokerB4\\Desafio.HomeBrokerB4.Infra\\Desafio.HomeBrokerB4.Infra.csproj",
+        "projectName": "Desafio.HomeBrokerB4.Infra",
+        "projectPath": "C:\\Users\\leona\\Desktop\\LEO\\Estudos\\Desafio\\Desafio.HomeBrokerB4\\Desafio.HomeBrokerB4.Infra\\Desafio.HomeBrokerB4.Infra.csproj",
+        "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\leona\\Desktop\\LEO\\Estudos\\Desafio\\Desafio.HomeBrokerB4\\Desafio.HomeBrokerB4.Infra\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\leona\\Desktop\\LEO\\Estudos\\Desafio\\Desafio.HomeBrokerB4\\Desafio.HomeBrokerB4.Domain\\Desafio.HomeBrokerB4.Domain.csproj": {
+                "projectPath": "C:\\Users\\leona\\Desktop\\LEO\\Estudos\\Desafio\\Desafio.HomeBrokerB4\\Desafio.HomeBrokerB4.Domain\\Desafio.HomeBrokerB4.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.19, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[7.0.19, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

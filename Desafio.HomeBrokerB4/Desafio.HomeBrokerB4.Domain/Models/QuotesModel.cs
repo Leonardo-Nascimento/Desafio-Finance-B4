@@ -9,5 +9,10 @@ namespace Desafio.HomeBrokerB4.Domain.Models
     public class QuotesModel
     {
         public List<ActionModel> Quotes { get; set; }
+
+        public QuotesModel()
+        {
+            Quotes = new List<ActionModel>();
+        }
     }
 }

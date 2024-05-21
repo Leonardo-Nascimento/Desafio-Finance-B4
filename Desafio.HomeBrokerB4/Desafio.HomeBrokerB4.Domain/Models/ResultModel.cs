@@ -28,7 +28,9 @@ namespace Desafio.HomeBrokerB4.Domain.Models
             return this;
         }
 
-        public OutputModel Response() => _output;
+        public ResultModel Response() => this;
+
+        //public ResultModel ok() => this;
 
 
     }

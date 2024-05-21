@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Desafio.HomeBrokerB4.Application\Desafio.HomeBrokerB4.Application.csproj" />
+    <ProjectReference Include="..\Desafio.HomeBrokerB4.Infra\Desafio.HomeBrokerB4.Infra.csproj" />
   </ItemGroup>
 
 </Project>

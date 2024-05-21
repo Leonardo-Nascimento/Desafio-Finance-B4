@@ -10,4 +10,13 @@
     <Folder Include="Http\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.19" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Desafio.HomeBrokerB4.Domain\Desafio.HomeBrokerB4.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
